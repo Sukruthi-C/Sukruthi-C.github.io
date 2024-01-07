@@ -3,28 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced UAV Navigation Project</title>
+    <title>Experience | Sukruthi Chidananda</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet">
     <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 shrink;
+        }
+
+        /* Additional custom styles */
         .container {
-            width: 80%;
-            margin: auto;
+            display: flex;
+            flex-direction: column; /* Stack children vertically */
+            align-items: center; /* Center children horizontally */
+            justify-content: center; /* Center children vertically if there's space */
+            margin: auto; /* Center the container */
             overflow: hidden;
+            /* Removed height: 60%; let the container size with content */
         }
-        .project-image, .project-video {
-            width: 45%;
-            float: right;
-            margin-right: 5%;
+
+        .project-container {
+            width: 80%; /* Adjust this to control how wide the project descriptions are */
+            max-width: 120px; /* Optional: sets a max-width for large screens */
+            margin: 0 auto; /* Center the container on the page */
+            display: flex;
+            justify-content: center; /* Centers the project descriptions horizontally */
+            flex-wrap: wrap; /* Enables wrapping for smaller screens */
         }
+
         .project-description {
-            width: 50%;
-            float: left;
+            flex: 1; /* Allows project descriptions to grow */
+            max-width: 600px; /* Adjust this to control the maximum width of each project */
+            margin: 1em; /* Adds space around each project */
+            /* Other styles remain the same */
         }
-        .project-description h2 {
-            color: #00796b;
+        .teal-background {
+            background-color: #80cbc4; /* Light teal color; adjust as needed */
+            padding: 40px; /* Add some spacing inside the block */
+            border-radius: 40px; /* Optional: if you want rounded corners */
+            margin: 100px 0; /* Add some margin above and below the block */
         }
+
         .project-description p {
             font-size: 16px;
             line-height: 1.6;
+            text-align: center; /* Centers the project paragraph */
         }
         .hover-content {
             display: none;
@@ -33,72 +66,313 @@
         .project-description:hover .hover-content {
             display: block;
         }
-        .video-container {
+        .video-container, .image-container {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 aspect ratio */
             height: 0;
             overflow: hidden;
         }
 
-        .video-container iframe {
+        .video-container iframe, .image-container img {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
         }
-
+        .volvo-image {
+            max-width: 30%; /* or any percentage or fixed size you want */
+            height: auto; /* maintain the aspect ratio */
+            display: block; /* ensures the image is a block-level element */
+            margin: 0 auto; /* centers the image within its container */
+        }
     </style>
 </head>
-
 <body>
-    
-    <div class="container">
+
+    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript> -->
+       
+        <!-- Navigation Menu-->
+        <!-- Nav class 1 -->
+        <nav class="hide-on-small-only">
+            <ul class="side-nav fixed section table-of-contents">
         
-        <div class="card-content">
-            <div class="col s12 m6">
-              <!-- Images for different projects -->
-              <a href="https://www.roahmlab.com/" target="_blank">
-                  <img alt="roahmlab" src="/assets/img/roahm.png" class="responsive-img" height="100"/>
-              </a>
-              <!-- Additional images here -->
-          </div>
+              <li class="logo">
+                <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+                  class="brand-logo grey-blue-text">
+                  <img src="/assets/img/pic.jpeg" class="circle img-responsive profile-pic" alt="avatar">
+                </a>
+              </li>
         
+              <li class="bold">
+                <a aria-label="Navigate to the About section" href="index.html" class="waves-effect waves-dark teal-text"><i
+                    class="mdi-social-person small"></i><span>About</span></a>
+              </li>
+              <li class="bold">
+                <a aria-label="Navigate to the Experience section" href="experience.html"
+                  class="waves-effect waves-dark teal-text"><i
+                    class="mdi-action-trending-up small"></i><span>Experience</span></a>
+              </li>
         
-        <div class="project-description">
-            <h2>UAV Navigation with PX4 Autopilot and QGroundControl</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed//8vpNkA_c7iM?si=TU4TNh5sWDANL_og" frameborder="0" allowfullscreen></iframe>
+              <li class="bold">
+                <!-- mdi-av-web small
+                     mdi-av-my-library-books small-->
+                <a aria-label="Navigate to the Projects section" href="project.html" class="waves-effect waves-dark teal-text"><i
+                    class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+              </li>
+        
+              <li class="bold">
+                <!--
+                ICONS:
+                mdi-action-assessment
+                mdi-social-poll
+                mdi-av-equalizer
+                -->
+                <a aria-label="Navigate to the Skills section" href="index.html" class="waves-effect waves-dark teal-text"><i
+                    class="mdi-action-assessment small"></i><span>Skills</span></a>
+              </li>
+              
+              <li class="bold">
+                <!--
+                ICONS:
+                -->
+                <a aria-label="Navigate to the Education section" href="index.html" class="waves-effect waves-dark teal-text"><i
+                    class="mdi-social-school small"></i><span>Education</span></a>
+              </li>
+        
+              <li class="bold">
+                <!-- 
+                1. mdi-communication-contacts
+                2. mdi-content-mail
+                3. mdi-communication-email
+                -->
+                <a aria-label="Navigate to the Contact section" href="index.html" class="waves-effect waves-dark teal-text"><i
+                    class="mdi-content-mail small"></i><span>Contact</span></a>
+              </li>
+        
+              <li class="bold">
+                <!--
+                ICONS:
+                1. mdi-action-description
+                2. mdi-file-folder
+                3. mdi-file-folder-open
+                4. mdi-file-attachment
+                5. mdi-file-folder-shared
+                -->
+                <!-- <a aria-label="Open Sukruthi's resume in a new tab" href="#resume" target="_blank"
+                  onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
+                  class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+                <!-- <a aria-label="Open Sukruthi's resume in a new tab" href="https://SukruthiChidananda.github.io/assets/resume/Sukruthi_Chidananda_Resume.pdf" target="_blank"
+                class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>   -->
+              </li>
+            </ul>
+          </nav>
+        
+          <!-- Nav class 2 -->
+          <nav class="hide-on-large only trigger z-depth-1">
+            <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+              class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <div class="name-title">
+              <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Sukruthi
+                Chidananda</a><span class="black-text">Robotics</span>
             </div>
-            <p>Hover over this text to see more details!</p>
-            <div class="hover-content">
-                <p><strong>Autopilot Configuration:</strong> Configured PX4 Autopilot on Ubuntu 22.04 using Docker container deployment.</p>
-                <p><strong>Ground Control Integration:</strong> Integrated QGroundControl with the local machine, establishing a connection via a designated port.</p>
-                <p><strong>UAV Testing:</strong> Conducted testing with tailsitter and CRC custom UAVs.</p>
-                <p><strong>Mission Planning and Execution:</strong> Developed custom mission plans and managed execution phases including takeoff, navigation, and landing.</p>
-                <p><strong>Position Control and Precision Navigation:</strong> Implemented position control algorithms and ensured precise waypoint navigation.</p>
-                <p><strong>Tools Used:</strong> PX4-Autopilot, QGroundControl, C++, Python, ROS.</p>
+          </nav>
+        
+          <!-- Nav class 3 -->
+          <nav class="hide-on-large only">
+            <ul id="slide-out" class="side-nav">
+              <li class="bold">
+                <a aria-label="Navigate to the About section" href="index.html" class="waves-effect waves-dark teal-text"><i
+                    class="mdi-social-person small"></i><span>About</span></a>
+              </li>
+              <li class="bold">
+                <a aria-label="Navigate to the Experience section" href="experience.html"
+                  class="waves-effect waves-dark teal-text"><i
+                    class="mdi-action-trending-up small"></i><span>Experience</span></a>
+              </li>
+              <li class="bold">
+                <a aria-label="Navigate to the Projects section" href="project.html" class="waves-effect waves-dark teal-text"><i
+                    class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+              </li>
+              <li class="bold">
+                <a aria-label="Navigate to the Skills section" href="index.html" class="waves-effect waves-dark teal-text"><i
+                    class="mdi-action-assessment small"></i><span>Skills</span></a>
+              </li>
+        
+              <li class="bold">
+                <a aria-label="Navigate to the Education section" href="index.html" class="waves-effect waves-dark teal-text"><i
+                    class="mdi-social-school small"></i><span>Education</span></a>
+              </li>
+              <li class="bold">
+                <a aria-label="Navigate to the Contact section" href="index.html" class="waves-effect waves-dark teal-text"><i
+                    class="mdi-content-mail small"></i><span>Contact</span></a>
+              </li>
+              <!-- <li class="bold">
+                <a aria-label="Open Sukruthi's Resume in a new tab"
+                  href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
+                  class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+              </li> -->
+            </ul>
+          </nav>
+      
+        
+
+    <main>
+        <div class="section teal" id="index-banner">
+            <div class="container">
+                <h1 class="header center-on-small-only white-text">Experience</h1>
             </div>
         </div>
-        <div style="clear:both;"></div>
-        <div class="project-description">
-            <h2>Trajectory Planning and Optimization for Robotic Navigation</h2>
-            <div class="project-image">
-                <div>
-                    <img src="/assets/img/roahm_lab.png" alt="Robotic Navigation Project Image" style="width: 100px; height: 100px;">
+        <!-- Your page content goes here -->
+
+        <!-- For demo purpose -->
+        <div class="container">
+        
+            <div class="card-content">
+                <div class="col s12">
+                  <!-- Images for different projects -->
+                  <a href="https://www.roahmlab.com/" target="_blank">
+                      <img alt="roahmlab" src="/assets/img/roahm.png" class="responsive-img" height="100"/>
+                  </a>
+                  <!-- Additional images here -->
+              </div>
+            
+            <div class="teal-background">
+            <div class="project-description">
+                <h2>UAV Navigation with PX4 Autopilot and QGroundControl</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed//8vpNkA_c7iM?si=TU4TNh5sWDANL_og" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>Hover over this text to see more details!</p>
+                <div class="hover-content">
+                    <h3>Experience Overview: </h3>
+                    <li><strong>Autopilot Configuration:</strong> Configured PX4 Autopilot on Ubuntu 22.04 using Docker container deployment.</li>
+                    <li><strong>Ground Control Integration:</strong> Integrated QGroundControl with the local machine, establishing a connection via a designated port.</li>
+                    <li><strong>UAV Testing:</strong> Conducted testing with tailsitter and CRC custom UAVs.</li>
+                    <li><strong>Mission Planning and Execution:</strong> Developed custom mission plans and managed execution phases including takeoff, navigation, and landing.</li>
+                    <li><strong>Position Control and Precision Navigation:</strong> Implemented position control algorithms and ensured precise waypoint navigation.</li>
+                    <p><strong>Tools Used:</strong> PX4-Autopilot, QGroundControl, C++, Python, ROS.</p>
                 </div>
             </div>
-            <p>Hover over this text to see more details!</p>
-            <div class="hover-content">
-                <p><strong>Interface Development:</strong> Enhanced REFINE controller interfaces for improved system interaction.</p>
-                <p><strong>FRS Generation and Management:</strong> Developed Forward Reachable Sets (FRS) and implemented FRS_loader and FRS_Instance for efficient management.</p>
-                <p><strong>Objective and Cost Function Implementation:</strong> Crafted objective functions and cost calculations for trajectory planning.</p>
-                <p><strong>Planner Development:</strong> Created Refine Planner for iterative trajectory planning, integrating dynamic path selection.</p>
-                <p><strong>Trajectory Optimization:</strong> Utilized Trajectory_Factory and RtdTrajOpt class for trajectory optimization and cost efficiency analysis.</p>
-                <p><strong>Tools Used:</strong> Matlab, C++</p>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="teal-background">
+            <div class="project-description">
+                <h2>Trajectory Planning and Optimization for Robotic Navigation</h2>
+                <div class="image-container">
+                    <img src="/assets/img/roahm_lab.png" alt="Robotic Navigation Project Image">
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="flex-grow: 1;">
+                        <p>Hover over this text to see more details!</p>
+                        <div class="hover-content">
+                            <h3>Experience Overview: </h3>
+                            <li><strong>Interface Development:</strong> Enhanced REFINE controller interfaces for improved system interaction.</li>
+                            <li><strong>FRS Generation and Management:</strong> Developed Forward Reachable Sets (FRS) and implemented FRS_loader and FRS_Instance for efficient management.</li>
+                            <li><strong>Objective and Cost Function Implementation:</strong> Crafted objective functions and cost calculations for trajectory planning.</li>
+                            <li><strong>Planner Development:</strong> Created Refine Planner for iterative trajectory planning, integrating dynamic path selection.</li>
+                            <li><strong>Trajectory Optimization:</strong> Utilized Trajectory_Factory and RtdTrajOpt class for trajectory optimization and cost efficiency analysis.</li>
+                            <p><strong>Tools Used:</strong> Matlab, C++</p>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
-        
-    </div>
+            <div class="teal-background">
+            <div class="project-description">
+                <h2>Autonomous Navigation and Manipulation for Robotic Systems</h2>
+                <div class="image-container">
+                    <img src="/assets/img/rob590.png" alt="Autonomous Navigation and Manipulation Project Image">
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="flex-grow: 1;">
+                        <p>Hover over this text to see more details!</p>
+                        <div class="hover-content">
+                            <h3>Experience Overview:</h3>
+                            
+                            <li><strong>Robotic Arm Kinematics:</strong> Derived kinematic equations and DH parameters for a 6-DOF robotic arm.</li>
+                            <li><strong>Simulation Verification:</strong> Conducted simulations to confirm joint angles against manual calculations.</li>
+                            <li><strong>Mobile Manipulator Integration:</strong> Developed a PyBullet environment with obstacles for path planning.</li>
+                            <li><strong>Path Planning Algorithms:</strong> Implemented A* for navigation, extended with RRT for object manipulation.</li>
+                        
+                            <p><strong>Tools Used:</strong> Python, PyBullet, NumPy, Eigen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            
+            
+        </div>
+        <div class="container">
+            
+            <div class="card-content">
+                <div class="col s12">
+                  <!-- Images for different projects -->
+                  <a href="https://www.volvo.com/" target="www.volvo.com">
+                    <img src="/assets/img/volvogroup-logo.png" alt="Efficiency Enhancement in Industrial Logistics" class="volvo-image">
+                  </a>
+                  <!-- Additional images here -->
+              </div>
+              <div class="teal-background">
+                <div class="project-description">
+                    <h2>Efficiency Enhancement in Industrial Logistics</h2>
+                    <div class="image-container">
+                        <!-- Replace with your own image link -->
+                        <img src="/assets/img/GTT_img.jpg" alt="Efficiency Enhancement in Industrial Logistics" ">
+                    </div>
+                    <div style="display: flex; align-items: flex-start;">
+                        <div style="flex-grow: 1;">
+                            <p>Hover over this text to see more details!</p>
+                            <div class="hover-content">
+                                <h3>Experience Overview:</h3>
+                                <ul>
+                                    <li><strong>CAD Design:</strong> Developed CAD models for AC gas cylinder transportation and tilting mechanisms.</li>
+                                    <li><strong>Automation Solutions:</strong> Worked on the design and implementation of Automated Guided Vehicles and 3MU systems.</li>
+                                    <li><strong>Process Optimization:</strong> Utilized Spaghetti diagrams for streamlining workflows and enhancing efficiency.</li>
+                                    <li><strong>Digital Andon System:</strong> Led the team in deploying a digital Andon system for real-time shop floor monitoring.</li>
+                                </ul>
+                                <p><strong>Tools Used:</strong> Creo, CAD, 3D Automation Software.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+            
+        </div>
+    </main>
+
+    <!-- Materialize JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+      // Materialize - Initializers
+      $(document).ready(function () {
+        $(".scrollspy").scrollSpy()
+        // Initialize collapse button
+        $(".button-collapse").sideNav({
+          menuWidth: 190, // Default is 240
+          edge: "left", // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        })
+      })
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

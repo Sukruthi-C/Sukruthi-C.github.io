@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience | Sukruthi Chidananda</title>
-    <!-- Materialize CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Custom Styles -->
-    <link href="/assets/css/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+    <!-- Font Awesome Icon - CSS-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Sukruthi Chidananda | Robotics</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-126939217-2');
+    </script>
+
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sukruthi Chidananda" />
+  <meta property="og:description" content="Robotics | Motion Planning & Controls" />
+  <meta property="og:url" content="https://Sukruthi-C.github.io/" />
+  <meta property="og:site_name" content="Sukruthi Chidananda | Robotics Engineer | Motion Planning & Controls" />
+  <meta property="article:publisher" content="https://Sukruthi-C.github.io/" />
+  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
     <style>
         body {
             display: flex;
@@ -66,11 +96,15 @@
         .project-description:hover .hover-content {
             display: block;
         }
-        .video-container, .image-container {
+         .image-container {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 aspect ratio */
             height: 0;
             overflow: hidden;
+        }
+        .video-container video {
+            width: 100%; /* Makes the video responsive */
+            height: auto; /* Maintains aspect ratio */
         }
 
         .video-container iframe, .image-container img {
@@ -89,16 +123,10 @@
     </style>
 </head>
 <body>
-
-    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript> -->
-       
         <!-- Navigation Menu-->
         <!-- Nav class 1 -->
         <nav class="hide-on-small-only">
             <ul class="side-nav fixed section table-of-contents">
-        
               <li class="logo">
                 <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
                   class="brand-logo grey-blue-text">
@@ -117,55 +145,23 @@
               </li>
         
               <li class="bold">
-                <!-- mdi-av-web small
-                     mdi-av-my-library-books small-->
                 <a aria-label="Navigate to the Projects section" href="project.html" class="waves-effect waves-dark teal-text"><i
                     class="mdi-av-my-library-books small"></i><span>Projects</span></a>
               </li>
         
               <li class="bold">
-                <!--
-                ICONS:
-                mdi-action-assessment
-                mdi-social-poll
-                mdi-av-equalizer
-                -->
                 <a aria-label="Navigate to the Skills section" href="index.html" class="waves-effect waves-dark teal-text"><i
                     class="mdi-action-assessment small"></i><span>Skills</span></a>
               </li>
               
               <li class="bold">
-                <!--
-                ICONS:
-                -->
                 <a aria-label="Navigate to the Education section" href="index.html" class="waves-effect waves-dark teal-text"><i
                     class="mdi-social-school small"></i><span>Education</span></a>
               </li>
         
               <li class="bold">
-                <!-- 
-                1. mdi-communication-contacts
-                2. mdi-content-mail
-                3. mdi-communication-email
-                -->
                 <a aria-label="Navigate to the Contact section" href="index.html" class="waves-effect waves-dark teal-text"><i
                     class="mdi-content-mail small"></i><span>Contact</span></a>
-              </li>
-        
-              <li class="bold">
-                <!--
-                ICONS:
-                1. mdi-action-description
-                2. mdi-file-folder
-                3. mdi-file-folder-open
-                4. mdi-file-attachment
-                5. mdi-file-folder-shared
-                -->
-                <!-- <a aria-label="Open Sukruthi's resume in a new tab" href="#resume" target="_blank"
-                  onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-                  class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-                <!-- <a aria-label="Open Sukruthi's resume in a new tab" href="https://SukruthiChidananda.github.io/assets/resume/Sukruthi_Chidananda_Resume.pdf" target="_blank"
-                class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>   -->
               </li>
             </ul>
           </nav>
@@ -209,11 +205,6 @@
                 <a aria-label="Navigate to the Contact section" href="index.html" class="waves-effect waves-dark teal-text"><i
                     class="mdi-content-mail small"></i><span>Contact</span></a>
               </li>
-              <!-- <li class="bold">
-                <a aria-label="Open Sukruthi's Resume in a new tab"
-                  href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
-                  class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-              </li> -->
             </ul>
           </nav>
       
@@ -229,14 +220,12 @@
 
         <!-- For demo purpose -->
         <div class="container">
-        
             <div class="card-content">
                 <div class="col s12">
                   <!-- Images for different projects -->
                   <a href="https://www.roahmlab.com/" target="_blank">
                       <img alt="roahmlab" src="/assets/img/roahm.png" class="responsive-img" height="100"/>
                   </a>
-                  <!-- Additional images here -->
               </div>
             
             <div class="teal-background">
@@ -253,7 +242,28 @@
                     <li><strong>UAV Testing:</strong> Conducted testing with tailsitter and CRC custom UAVs.</li>
                     <li><strong>Mission Planning and Execution:</strong> Developed custom mission plans and managed execution phases including takeoff, navigation, and landing.</li>
                     <li><strong>Position Control and Precision Navigation:</strong> Implemented position control algorithms and ensured precise waypoint navigation.</li>
-                    <p><strong>Tools Used:</strong> PX4-Autopilot, QGroundControl, C++, Python, ROS.</p>
+                    <li><strong>Tools Used:</strong> </li>
+                    <div class="card">
+                        <div class="card-content">
+                          <div class="row text-center">
+                            <div class="col s4 m2">
+                              <img alt="" src="/assets/img/cplusplus.png" class="responsive-img" />C++
+                            </div>
+                            <div class="col s4 m2">
+                              <img alt="" src="/assets/img/px4.png" class="responsive-img" />PX4-Autopilot
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/ros.jpeg" class="responsive-img" />ROS
+                            </div>
+                            <div class="col s4 m2">
+                            <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />PX4-Autopilot
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/Gazebo.svg" class="responsive-img" />Gazebo
+                              </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
             </div>
@@ -261,8 +271,16 @@
             <div class="teal-background">
             <div class="project-description">
                 <h2>Trajectory Planning and Optimization for Robotic Navigation</h2>
-                <div class="image-container">
-                    <img src="/assets/img/roahm_lab.png" alt="Robotic Navigation Project Image">
+                <div class="media-container"> <!-- Container for image and video -->
+                    <div class="image-container">
+                        <img src="/assets/img/roahm_lab.png" alt="Robotic Navigation Project Image">
+                    </div>
+                    <div class="video-container">
+                        <video controls>
+                            <source src="/assets/vids/roahm_vid2.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
                 <div style="display: flex; align-items: flex-start;">
                     <div style="flex-grow: 1;">
@@ -274,7 +292,21 @@
                             <li><strong>Objective and Cost Function Implementation:</strong> Crafted objective functions and cost calculations for trajectory planning.</li>
                             <li><strong>Planner Development:</strong> Created Refine Planner for iterative trajectory planning, integrating dynamic path selection.</li>
                             <li><strong>Trajectory Optimization:</strong> Utilized Trajectory_Factory and RtdTrajOpt class for trajectory optimization and cost efficiency analysis.</li>
-                            <p><strong>Tools Used:</strong> Matlab, C++</p>
+                            <li><strong>Tools Used:</strong> </li> <div class="card">
+                                <div class="card-content">
+                                  <div class="row text-center">
+                                    <div class="col s4 m2">
+                                      <img alt="" src="/assets/img/cplusplus.png" class="responsive-img" />C++
+                                    </div>
+                                    <div class="col s4 m2">
+                                      <img alt="" src="/assets/img/matlab.png" class="responsive-img" />Matlab
+                                    </div>
+                                    <div class="col s4 m2">
+                                        <img alt="" src="/assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
                     
@@ -298,7 +330,26 @@
                             <li><strong>Mobile Manipulator Integration:</strong> Developed a PyBullet environment with obstacles for path planning.</li>
                             <li><strong>Path Planning Algorithms:</strong> Implemented A* for navigation, extended with RRT for object manipulation.</li>
                         
-                            <p><strong>Tools Used:</strong> Python, PyBullet, NumPy, Eigen.</p>
+                            <li><strong>Tools Used:</strong> Python, PyBullet, NumPy, Eigen.</li>
+                            <div class="card">
+                                <div class="card-content">
+                                  <div class="row text-center">
+                                    <div class="col s4 m2">
+                                        <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
+                                      </div>
+                                    <div class="col s4 m2">
+                                        <img alt="" src="/assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" />NumPy
+                                      </div>
+                                      <div class="col s4 m2">
+                                        <img alt="" src="/assets/img/pybullet.png" class="responsive-img" />Pybullet
+                                      </div>
+                                      
+                                      <div class="col s4 m2">
+                                        <img alt="" src="/assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -330,13 +381,11 @@
                             <p>Hover over this text to see more details!</p>
                             <div class="hover-content">
                                 <h3>Experience Overview:</h3>
-                                <ul>
-                                    <li><strong>CAD Design:</strong> Developed CAD models for AC gas cylinder transportation and tilting mechanisms.</li>
-                                    <li><strong>Automation Solutions:</strong> Worked on the design and implementation of Automated Guided Vehicles and 3MU systems.</li>
-                                    <li><strong>Process Optimization:</strong> Utilized Spaghetti diagrams for streamlining workflows and enhancing efficiency.</li>
-                                    <li><strong>Digital Andon System:</strong> Led the team in deploying a digital Andon system for real-time shop floor monitoring.</li>
-                                </ul>
-                                <p><strong>Tools Used:</strong> Creo, CAD, 3D Automation Software.</p>
+                                <li><strong>CAD Design:</strong> Developed CAD models for AC gas cylinder transportation and tilting mechanisms.</li>
+                                <li><strong>Automation Solutions:</strong> Worked on the design and implementation of Automated Guided Vehicles and 3MU systems.</li>
+                                <li><strong>Process Optimization:</strong> Utilized Spaghetti diagrams for streamlining workflows and enhancing efficiency.</li>
+                                <li><strong>Digital Andon System:</strong> Led the team in deploying a digital Andon system for real-time shop floor monitoring.</li>
+                                <li><strong>Tools Used:</strong> Creo, CAD, 3D Automation Software.</li>
                             </div>
                         </div>
                     </div>

@@ -64,6 +64,20 @@
   height: auto;
 }
 
+.youtube {
+  background-color: #FF0000; /* YouTube's brand color */
+  color: white;
+}
+
+.youtube:hover {
+  background-color: #C4302B; /* Slightly darker red for hover state */
+}
+
+/* Add this rule if you're using Font Awesome for the YouTube icon */
+.icon-btn.fa-youtube-play:before {
+  content: "\f16a"; /* Font Awesome YouTube Play icon */
+}
+
 
 .github {
   color: black;

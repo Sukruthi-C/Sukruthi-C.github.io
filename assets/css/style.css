@@ -381,7 +381,7 @@ h3 {
   border-bottom: 5px solid #ffffff;
 }
 
-#intro.section .teal {
+#intro.section .black {
   padding: 0 10px;
 }
 
@@ -577,23 +577,23 @@ small {
   color: #000000 !important;
 }
 
-/* main .teal-text */
+/* main .black-text */
 
-.teal-text {
+.black-text {
   color: #070707 !important;
 }
 
-/* .teal-text {
+/* .black-text {
   color: #0b5e86 !important;
 } */
 
-/* .teal */
+/* .black */
 
-.teal {
+.black {
   background-color: #080808 !important;
 }
 
-/* .teal {
+/* .black {
   background-color: #00695c !important;
 } */
 

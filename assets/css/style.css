@@ -5,13 +5,10 @@
   width: auto;
   height: auto;
   overflow: hidden;
-  /* display: inline-block; */
-  
-  
-  /* background-size: cover;  */
-  margin: -31px; 
+  margin: -31px;
   margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
+
+  border: 2px solid #000000 !important;
   border-radius: 50% !important;
 }
 
@@ -88,7 +85,7 @@
 }
 
 .angellist {
-  color: grey;
+  color: rgb(0, 0, 0);
 }
 
 .icon-btn:hover {
@@ -114,7 +111,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #00796b;
+  color: #000000;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -145,7 +142,7 @@
 }
 
 .contactme:hover{
-  color: #00796b;
+  color: #000000;
   background-color: white;
 }
 /* main body */
@@ -184,8 +181,8 @@ a {
 } */
 
 blockquote {
-  border-left: 5px solid #795548;
-  color: #795548;
+  border-left: 5px solid #000000;
+  color: #000000;
   font-size: 125%;
   font-weight: 400;
   margin: 20px 0;
@@ -229,9 +226,10 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
+  background: #ffffff !important;
   padding-left: 190px;
 }
+
 
 dl {
   margin-top: 0.5rem;
@@ -324,6 +322,7 @@ li.logo span {
 }
 
 h3 {
+  
   font-weight: 200;
   margin-bottom: 60px;
   margin-top: 0;
@@ -349,12 +348,13 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #ffffff !important;
   position: relative;
 }
 
+
 #intro.section .container {
-  color: white;
+  color: #000000 !important;
   font-weight: 200;
   left: 0;
   position: absolute;
@@ -373,11 +373,12 @@ h3 {
   /* font-weight: 400; */
   line-height: 150%;
   /* padding: 0 0px; */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: none !important;
+  color: #000000 !important;
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid #24305e;
+  border-bottom: 5px solid #ffffff;
 }
 
 #intro.section .teal {
@@ -385,7 +386,7 @@ h3 {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent !important;
   height: 100%;
   left: 0;
   position: absolute;
@@ -396,7 +397,7 @@ h3 {
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgba(33, 150, 243, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .card {
@@ -413,12 +414,12 @@ h3 {
 
 .card li a {
   margin-right: 0;
-  color: #333;
-  border-bottom: 2px solid #ffab40;
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
 }
 
 .card li a:hover {
-  color: #333;
+  color: #000000;
   font-weight: 500;
 }
 
@@ -458,7 +459,7 @@ h3 {
 
 .card-action span {
   font-size: 85%;
-  color: #666;
+  color: #cfcfcf;
 }
 
 .card ul {
@@ -472,7 +473,7 @@ h3 {
 }
 
 .card ul li li {
-  color: #666;
+  color: #000000;
   font-size: 13px;
 }
 
@@ -503,7 +504,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid #000000 !important;
 }
 
 #skills .card.large {
@@ -573,13 +574,13 @@ small {
 }
 
 .grey-text {
-  color: #666 !important;
+  color: #000000 !important;
 }
 
 /* main .teal-text */
 
 .teal-text {
-  color: #008073 !important;
+  color: #070707 !important;
 }
 
 /* .teal-text {
@@ -589,7 +590,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #008073 !important;
+  background-color: #080808 !important;
 }
 
 /* .teal {
@@ -627,12 +628,12 @@ small {
     width: 100%;
   }
   nav {
-    background: #fff;
+    background: #8b8b8b;
     height: 64px;
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+    color: #000000;
     height: 56px;
     line-height: 56px;
   }

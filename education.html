@@ -135,7 +135,7 @@
   position: relative;
   width: 180px;
   height: 180px;
-  background: #f5f5f5;
+  background: #000000;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   cursor: pointer;
@@ -169,7 +169,7 @@
   color: #000;
   opacity: 0;
   overflow-y: auto;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .project-tile:hover .tile-hover {
@@ -177,6 +177,7 @@
 }
 
 .tile-hover h3 {
+    color: black !important;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -234,7 +235,7 @@
   color: black;
   opacity: 0;
   padding: 15px;
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.75s ease-in-out;
   overflow-y: auto;
   pointer-events: none;
 }
@@ -257,6 +258,7 @@
 
 /* Only the TILE grows — content is NOT scaled */
 .niosh-tile:hover {
+    color: black !important;
   width: 500px;        /* grow horizontally */
   height: 600px;       /* grow vertically */
   z-index: 10;
@@ -290,6 +292,7 @@
 
 .tile-hover h3,
 .tile-hover ul {
+    color: black !important;
   font-size: 14px;     /* fixed readable size */
   line-height: 1.4;
 }
@@ -334,6 +337,7 @@
                 <a aria-label="Navigate to the Education section" href="index.html" class="waves-effect waves-dark teal-text"><i
                     class="mdi-social-school small"></i><span>Education</span></a>
               </li>
+
                 <li class="bold">
                 <a aria-label="Navigate to the pub section" href="publication.html" class="waves-effect waves-dark teal-text"><i
                     class="mdi-social-school small"></i><span>Publications</span></a>
@@ -393,7 +397,7 @@
     <main>
         <div class="section teal" id="index-banner">
             <div class="container">
-                <h1 class="header center-on-small-only white-text">Experience</h1>
+                <h1 class="header center-on-small-only white-text">Education</h1>
             </div>
         </div>
         <!-- Your page content goes here -->
@@ -407,270 +411,102 @@
                       <img alt="roahmlab" src="/assets/img/roahm.png" class="responsive-img" height="100"/>
                   </a>
               </div> -->
-              <!-- Vecna Experience Section -->
 <div class="niosh-section">
-    <h2>Vecna Technologies</h2>
-    <h5>Robotics Engineer</h5>
+  <h2>University of Michigan</h2>
+  <h5>Master of Science in Robotics</h5>
 
-    <div class="niosh-tile-row">
+  <div class="niosh-tile-row">
 
-        <!-- Tile 1 -->
-        <div class="niosh-tile">
-            <div class="tile-title">Autonomy Stack</div>
-            <div class="tile-hover">
-                <h3>Robot Autonomy Stack</h3>
-                <ul>
-                    <li>Integrated cameras, LiDAR, IMU & wheel encoders into a full localization + navigation stack.</li>
-                    <li>Implemented AMCL-based localization for deployment in museums, aquariums & hospitals.</li>
-                    <li>Improved robustness of planning & control in crowded indoor environments.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Tile 2 -->
-        <div class="niosh-tile">
-            <div class="tile-title">Human-Following</div>
-            <div class="tile-hover">
-                <h3>Human-Following Robot</h3>
-                <ul>
-                    <li>Developed YOLOv11-based person detection with Kalman filtering.</li>
-                    <li>Designed reactive control & recovery behaviors for smooth tracking.</li>
-                    <li>Achieved reliable human-following in dense crowds.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Tile 3 -->
-        <div class="niosh-tile">
-            <div class="tile-title">Trajectory Accuracy</div>
-            <div class="tile-hover">
-                <h3>Path Tracking Performance</h3>
-                <ul>
-                    <li>Achieved 89% tracking accuracy on straight, zig-zag & circular motion patterns.</li>
-                    <li>Maintained mean following distance error of 2.2 ± 0.5 m.</li>
-                    <li>Validated performance across multiple controlled trials.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Tile 4 -->
-        <div class="niosh-tile">
-            <div class="tile-title">Go-to-Location Nav</div>
-            <div class="tile-hover">
-                <h3>Dynamic Navigation System</h3>
-                <ul>
-                    <li>Designed real-time obstacle avoidance & dynamic replanning pipeline.</li>
-                    <li>Achieved 94% goal-success across 60+ trials on three robots.</li>
-                    <li>Demonstrated collision-free navigation in real environments.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Tile 5 -->
-        <div class="niosh-tile">
-            <div class="tile-title">Voice Commands</div>
-            <div class="tile-hover">
-                <h3>LLM-Based Voice Interface</h3>
-                <ul>
-                    <li>Integrated LLM-powered natural-language understanding.</li>
-                    <li>Converted voice commands into navigation goals.</li>
-                    <li>Enabled fully hands-free robot operation.</li>
-                </ul>
-            </div>
-        </div>
-
+    <!-- Tile 1: Core Courses -->
+    <div class="niosh-tile">
+      <div class="tile-title">Core Robotics</div>
+      <div class="tile-hover">
+        <h3>Core Robotics Coursework</h3>
+        <ul>
+          <li>ROB 422: Algorithmic Robotics</li>
+          <li>ROB 550: Robotics Systems Laboratory</li>
+          <li>ROB 501: Linear Algebra</li>
+          <li>ROB 502: Programming for Robotics</li>
+        </ul>
+      </div>
     </div>
+
+    <!-- Tile 2: Controls -->
+    <div class="niosh-tile">
+      <div class="tile-title">Control Systems</div>
+      <div class="tile-hover">
+        <h3>Control Engineering</h3>
+        <ul>
+          <li>EECS 565: Linear Feedback Controls</li>
+          <li>AEROSP 584: Navigation & Guidance of Aerospace Vehicles</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tile 3: Learning & Perception -->
+    <div class="niosh-tile">
+      <div class="tile-title">Learning & Vision</div>
+      <div class="tile-hover">
+        <h3>Learning, AI & Perception</h3>
+        <ul>
+          <li>ROB 498: Robot Learning for Planning & Control</li>
+          <li>ROB 599: Deep Learning for Robot Perception</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-        <!-- NIOSH Experience Section -->
+<!-- ========================= -->
+<!-- AMRITA SCHOOL OF ENGINEERING -->
+<!-- ========================= -->
 <div class="niosh-section">
-    <h2>NIOSH</h2>
-    <h5>Robotics Research Engineer</h3>
+  <h2>Amrita School of Engineering</h2>
+  <h5>B.Tech in Mechanical Engineering</h5>
 
-    <div class="niosh-tile-row">
+  <div class="niosh-tile-row">
 
-        <!-- Tile 1 -->
-        <div class="niosh-tile">
-            <div class="tile-title">Memory-Augmented MPC</div>
-            <div class="tile-hover">
-                <h3>Memory-Augmented MPC Framework</h3>
-                <ul>
-                    <li>Developed short-term temporal memory integrated with MPC.</li>
-                    <li>Improved anticipatory human-following in cluttered spaces.</li>
-                    <li>Enhanced safety-aware, adaptive navigation.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Tile 2 -->
-        <div class="niosh-tile">
-            <div class="tile-title">Safety & Proxemics Study</div>
-            <div class="tile-hover">
-                <h3>Safety & Proxemics Navigation</h3>
-                <ul>
-                    <li>Achieved 98% tracking success across 150 trials.</li>
-                    <li>Maintained 2.5 ± 0.3 m trailing distance.</li>
-                    <li>Quantified comfort & safety metrics.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Tile 3 -->
-        <div class="niosh-tile">
-            <div class="tile-title">Human-Subject Experiment</div>
-            <div class="tile-hover">
-                <h3>Proxemics-Controlled Experiment</h3>
-                <ul>
-                    <li>Designed motion-planning system for human–robot proxemics.</li>
-                    <li>Integrated motion capture + physiological sensors.</li>
-                    <li>Measured comfort & robot trajectory smoothness.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Tile 4 -->
-        <div class="niosh-tile">
-            <div class="tile-title">VR Construction Study</div>
-            <div class="tile-hover">
-                <h3>VR-Based Attention Study</h3>
-                <ul>
-                    <li>Built VR high-rise construction simulation.</li>
-                    <li>Analyzed drone noise & visual cues on attention.</li>
-                    <li>Measured biomechanical & physiological metrics.</li>
-                </ul>
-            </div>
-        </div>
-
+    <!-- Tile 1: Core Mech -->
+    <div class="niosh-tile">
+      <div class="tile-title">Mechanical Core</div>
+      <div class="tile-hover">
+        <h3>Core Mechanical Courses</h3>
+        <ul>
+          <li>Kinematics of Machines</li>
+          <li>Dynamics of Machines</li>
+          <li>Machine Dynamics & Controls</li>
+        </ul>
+      </div>
     </div>
+
+    <!-- Tile 2: Robotics -->
+    <div class="niosh-tile">
+      <div class="tile-title">Robotics</div>
+      <div class="tile-hover">
+        <h3>Robotics Coursework</h3>
+        <ul>
+          <li>Industrial Robotics</li>
+          <li>Control Engineering</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tile 3: Operations -->
+    <div class="niosh-tile">
+      <div class="tile-title">Operations</div>
+      <div class="tile-hover">
+        <h3>Operations & Systems</h3>
+        <ul>
+          <li>Operational Research</li>
+          <li>Aircraft Systems & Engineering</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-
-            
-            <div class="teal-background">
-            <div class="project-description">
-                <h2>UAV Navigation with PX4 Autopilot and QGroundControl</h2>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed//8vpNkA_c7iM?si=TU4TNh5sWDANL_og" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <p>Hover over this text to see more details!</p>
-                <div class="hover-content">
-                    <h3>Experience Overview: </h3>
-                    <li><strong>Autopilot Configuration:</strong> Configured PX4 Autopilot on Ubuntu 22.04 using Docker container deployment.</li>
-                    <li><strong>Ground Control Integration:</strong> Integrated QGroundControl with the local machine, establishing a connection via a designated port.</li>
-                    <li><strong>UAV Testing:</strong> Conducted testing with tailsitter and CRC custom UAVs.</li>
-                    <li><strong>Mission Planning and Execution:</strong> Developed custom mission plans and managed execution phases including takeoff, navigation, and landing.</li>
-                    <li><strong>Position Control and Precision Navigation:</strong> Implemented position control algorithms and ensured precise waypoint navigation.</li>
-                    <li><strong>Tools Used:</strong> </li>
-                    <div class="card">
-                        <div class="card-content">
-                          <div class="row text-center">
-                            <div class="col s4 m2">
-                              <img alt="" src="/assets/img/cplusplus.png" class="responsive-img" />C++
-                            </div>
-                            <div class="col s4 m2">
-                              <img alt="" src="/assets/img/px4.png" class="responsive-img" />PX4-Autopilot
-                            </div>
-                            <div class="col s4 m2">
-                                <img alt="" src="/assets/img/ros.jpeg" class="responsive-img" />ROS
-                            </div>
-                            <div class="col s4 m2">
-                            <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />PX4-Autopilot
-                            </div>
-                            <div class="col s4 m2">
-                                <img alt="" src="/assets/img/Gazebo.svg" class="responsive-img" />Gazebo
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-            </div>
-            <div style="clear:both;"></div>
-            <div class="teal-background">
-            <div class="project-description">
-                <h2>Trajectory Planning and Optimization for Robotic Navigation</h2>
-                <div class="media-container"> <!-- Container for image and video -->
-                    <div class="image-container">
-                        <img src="/assets/img/roahm_lab.png" alt="Robotic Navigation Project Image">
-                    </div>
-                    <div class="video-container">
-                        <video controls>
-                            <source src="/assets/vids/roahm_vid2.webm" type="video/webm">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                <div style="display: flex; align-items: flex-start;">
-                    <div style="flex-grow: 1;">
-                        <p>Hover over this text to see more details!</p>
-                        <div class="hover-content">
-                            <h3>Experience Overview: </h3>
-                            <li><strong>Interface Development:</strong> Enhanced REFINE controller interfaces for improved system interaction.</li>
-                            <li><strong>FRS Generation and Management:</strong> Developed Forward Reachable Sets (FRS) and implemented FRS_loader and FRS_Instance for efficient management.</li>
-                            <li><strong>Objective and Cost Function Implementation:</strong> Crafted objective functions and cost calculations for trajectory planning.</li>
-                            <li><strong>Planner Development:</strong> Created Refine Planner for iterative trajectory planning, integrating dynamic path selection.</li>
-                            <li><strong>Trajectory Optimization:</strong> Utilized Trajectory_Factory and RtdTrajOpt class for trajectory optimization and cost efficiency analysis.</li>
-                            <li><strong>Tools Used:</strong> </li> <div class="card">
-                                <div class="card-content">
-                                  <div class="row text-center">
-                                    <div class="col s4 m2">
-                                      <img alt="" src="/assets/img/cplusplus.png" class="responsive-img" />C++
-                                    </div>
-                                    <div class="col s4 m2">
-                                      <img alt="" src="/assets/img/matlab.png" class="responsive-img" />Matlab
-                                    </div>
-                                    <div class="col s4 m2">
-                                        <img alt="" src="/assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
-                                      </div>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-            
-            
-            
-        </div>
-        <div class="container">
-            
-            <div class="card-content">
-                <div class="col s12">
-                  <!-- Images for different projects -->
-                  <a href="https://www.volvo.com/" target="www.volvo.com">
-                    <img src="/assets/img/volvogroup-logo.png" alt="Efficiency Enhancement in Industrial Logistics" class="volvo-image">
-                  </a>
-                  <!-- Additional images here -->
-              </div>
-              <div class="teal-background">
-                <div class="project-description">
-                    <h2>Efficiency Enhancement in Industrial Logistics</h2>
-                    <div class="image-container">
-                        <!-- Replace with your own image link -->
-                        <img src="/assets/img/GTT_img.jpg" alt="Efficiency Enhancement in Industrial Logistics" ">
-                    </div>
-                    <div style="display: flex; align-items: flex-start;">
-                        <div style="flex-grow: 1;">
-                            <p>Hover over this text to see more details!</p>
-                            <div class="hover-content">
-                                <h3>Experience Overview:</h3>
-                                <li><strong>CAD Design:</strong> Developed CAD models for AC gas cylinder transportation and tilting mechanisms.</li>
-                                <li><strong>Automation Solutions:</strong> Worked on the design and implementation of Automated Guided Vehicles and 3MU systems.</li>
-                                <li><strong>Process Optimization:</strong> Utilized Spaghetti diagrams for streamlining workflows and enhancing efficiency.</li>
-                                <li><strong>Digital Andon System:</strong> Led the team in deploying a digital Andon system for real-time shop floor monitoring.</li>
-                                <li><strong>Tools Used:</strong> Creo, CAD, 3D Automation Software.</li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              
-            
-        </div>
     </main>
 
     <!-- Materialize JS -->

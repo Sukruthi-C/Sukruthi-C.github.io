@@ -132,6 +132,17 @@ p {
   font-weight: 700;
 }
 
+/* compact one-line-per-role list (Experience, Education) */
+.timeline .date {
+  width: 150px;
+  font-weight: 400;
+  color: #555;
+}
+
+.timeline .note {
+  color: #555;
+}
+
 /* one entry: thumbnail on the left, text on the right */
 .row {
   display: flex;
@@ -304,6 +315,14 @@ p {
 
   .news .date {
     width: 80px;
+  }
+
+  .timeline li {
+    flex-direction: column;
+  }
+
+  .timeline .date {
+    width: auto;
   }
 
   .row {

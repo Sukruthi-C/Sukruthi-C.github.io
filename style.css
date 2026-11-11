@@ -136,6 +136,8 @@ p {
 .timeline .date {
   width: 150px;
   font-weight: 400;
+  font-style: normal;
+  white-space: nowrap;
   color: #555;
 }
 
